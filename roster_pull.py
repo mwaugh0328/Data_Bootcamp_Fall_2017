@@ -16,8 +16,8 @@ import requests
 ###############################################################################
 # First, specify the correct folder we will work from:
 
-folder = "C:\\Users\\mwaugh.NYC-STERN\\Dropbox"
-folder = folder + "\\NYU TEACHING\\Data Boot Camp Fall 2017\\Roster"
+folder = "C:\\data_bootcamp"
+#folder = folder + "\\NYU TEACHING\\Data Boot Camp Fall 2017\\Roster"
 
 # Note double backslash for windows, then the add sign on strings simply puts 
 # the two things togetehr.
