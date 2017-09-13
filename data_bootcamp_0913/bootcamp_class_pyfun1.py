@@ -93,7 +93,7 @@ Compute this using the variables principal = 200 and i = 0.05.
 loan = 200 # Note, I like to make variable names, short, but informative
 interest = 0.05 # Same thing, be mindfull not to name your varible the same as an operation(?)
 
-total_payment = 200*(1+interest)
+total_payment = loan*(1+interest)
 
 print(total_payment) 
 
@@ -105,7 +105,7 @@ gdp_2013 = 15.58
 gdp_2014 = 15.96
 
 gdp_growth = 100*((gdp_2014/gdp_2013) - 1)
-print(gdp_growth)
+print("GDP Growth in Percent",gdp_growth)
 # Very nice, again note the naming convention, things are short, but informative so
 # if your friend looked at the code he would understand what you are doing.
 
