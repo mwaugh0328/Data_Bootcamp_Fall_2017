@@ -170,65 +170,6 @@ print(x,y, end='\n \n \n \n \n')
 # you what is up) or check out the object consol
 # Return to quesiton about why quotation marks...
 
-#%%
-###############################################################################
-# Strings...this is where I think python is VERY POWERFULL...lots of enviornments
-# can do numerical calculations, plotting well, but handeling and manipulating 
-# strings is less common...
-
-# Lesson 1: A string is a collection of characters between quotation marks
-# Lesson 2: A string may look like a number, but it is not.
-
-# '12'/3 this is not going to work as "12" is a string, python does not see it 
-# as a number, and then it is being asked to perform a numerical computation on
-# something that is not a number, thus an error message.
-
-a = "some"
-b = "thing"
-c = a + b # this is awesome....so natural and intuitive... suppose you tried
-            # this in excel?? what would happen.
-print(c)
-
-# Back to print, we can do some cool things with this...
-print("the value of z is", z)
-
-# or even do something like this
-message = "the value of z is"
-print(message, z)
-
-'''
-Exercise. What is a string? How would you explain it to a friend?
-'''
-
-'''
-Exercise. What happens if we run the statement: 'Chase'/2? Why?
-'''
-
-'''
-Exercise. This one's a little harder. Assign your first name as a string to the
-variable firstname and your last name to the variable lastname. 
-Use them to construct a new variable equal to your first name, a space, 
-then your last name. Hint: Think about how you would express a space as a string.
-'''
-first_name = "Michael"
-last_name = "Waugh"
-space = " "
-
-full_name = first_name + space + last_name
-print(full_name)
-# Note how python interperts this space in " " it is implicitly a character, just
-# and empty space...
-
-'''
-Exercise. Set s = 'string'. What is s + s? 2*s? s*2? What is the logic here?
-'''
-s = 'string'
-print(s+s)
-print(2*s)
-print(s*2)
-print(s + full_name*2)
-
-
 
 
 
