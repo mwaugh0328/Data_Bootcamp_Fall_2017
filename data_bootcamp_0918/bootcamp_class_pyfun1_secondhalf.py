@@ -240,7 +240,7 @@ numberlist[0] = 328
 print(numberlist) # Note how I changed the fist entry int he list!!!
 
 test_tuple = (1,2,3) # Similar to a list, but round brackets...
-test_tuple[0] = 328
+#test_tuple[0] = 328 # UNCOMMENT THIS PART OF THE CODE TO UNDERSTAND 
 # This won't run 
 #"TypeError: 'tuple' object does not support item assignment" meaning, that once
 # set you can not assignm new values... This is the immutability property of a tuple
@@ -250,6 +250,40 @@ test_tuple[0] = 328
 # these are "buildin" meaning that they are ready to go when we boot up, this is
 # unlike the log function which with out adding some package is not recognized.
 
+print(len('hello world')) # note how len is "counting how many characters" 
+                          # And it is including the white space...
+print(len([1, 5, -3])) # How many times in the list
+print(len((1, 5, -3))) # how many itesm in the tuple
+print(len('1234')) # String, so how many characters
+#len(1234) # This is interesting, you should get an error message, a number
+            # does not have this "attribute" 
+len('12.34') # Again, a string....
+#len(12.34) # same issue wiht a floating point number...
+
+print(type(2)) # Its saying an integer
+print(type(2.5)) # A floating point number, or float
+print(type('2.5')) # Looks like a number, but a string
+print(type('something')) # String
+print(type([1, 5, -3])) # Here it sees that this is a list...
+print(type((1, 5, -3))) # A tuple
+
+# Note spyder in the variable explorer is always reporting this as well...with 
+# the type reported. What is a float anyways...
+'''
+Exercise. Try type(zoo). Why does it generate an error? What does the error mean?
+It should tells us that zoo had not been defined. Big picture, when we create a 
+variable, assigninging it a value, we are implicitly giving it a type that can 
+be recognized...
+'''
+'''
+Exercise. Set zoo = ['lions', 'bears'] and try type(zoo) again. 
+What do you get this time?
+# Now it works...it tells us a list. Why not a string???
+'''
+
+#%%
+###############################################################################
+# Changing types...super important for data work....
 
 
 
