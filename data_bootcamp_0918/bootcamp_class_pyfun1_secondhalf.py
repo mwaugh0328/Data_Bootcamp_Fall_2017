@@ -286,6 +286,132 @@ What do you get this time?
 # Changing types...super important for data work....
 
 
+s = '12.34' # This is a string (check it to veryify...)
+
+f = float(s) # This builtin function will convert the string to a float
+
+print(type(f)) # It should now tells us that f is a float...
+
+s = "12"
+
+i = int(s) # This should convert the string to an integer...what if we did the 
+            # string "12.34"??? 
+
+print(type(i)) # This should be a type integer...
+
+# Then we can always convert the stuff back...
+
+s = str(12) # So start with an integer and go to a string...
+print('s has type', type(s))
+t = str(12.34) # Or start with a float and go to a string as well
+print('t has type', type(f))
+
+# Big picture...this is again a super powerfull aspect of python that makes it 
+# very applicable for working with data...the ability to go from numbers to strings
+# and back...very usefull...
+
+# This is cool...start with a string and make it a list by the command list
+x = 'abc'
+
+y = list(x)
+
+print(y) # So now y should be a list of a, b, c
+'''
+Exercise. What happens if we apply the function float to the string 'some'?
+'''
+# Key issue here is that it has to be able to recognize it as a floating point
+# number, here it can not as there are no numbers to represent. 
+
+'''
+Exercise. How would you convert the integer i = 1234 to the 
+list l = ['1', '2', '3', '4']?
+'''
+# I did the following: first I tried list(1234), it did not work, then I realized
+# the list function must operate on teh right things "iterable" then I guessed 
+# that if I converted to a string it would work... and it did.
+# pro tip: note that the values in l indicate that they are a string, this is a hint
+# that I should have recognized to do this...
+
+'''
+Exercise. What is the result of list(str(int(float('12.34'))))? 
+Why? Hint: Start in the middle (the string '12.34') and work your way out, 
+one step at a time.
+'''
+# This is like order of operations, so it works from the inside out, so it goes
+# floating point, then integer (test what this does), then string, the list...
+# I think it should give ["1", "2"]
+'''
+Exercise (challenging). This one is tricky, but it came up in some work we 
+were doing. Suppose year is a string containing the year of a particular piece 
+of data; for example, year = '2015'. 
+How would we construct a string for the following year?
+ Hint: Start by converting year to an integer.
+'''
+year_one = "2015"
+year_one = int(year_one)
+year_two = year_one + 1
+
+# This is why this stuff is powerfull, sometimes there is numerical data stored
+# as a string...so python allows you easilty to convert it and then perform a 
+# numerical operation on it...
+
+#%%
+###############################################################################
+# Objects and methods.... a very powerfull, time saving feature of python. Basic
+# ideas, with each object ( say a list) there is a set, predefined methods that
+# will go along with that specific opject. Not clear lets see.
+
+# Try this...
+print(numberlist)
+numberlist.append(7) # then the .append method will append the value 7 to the 
+                     # original list...
+print(numberlist)
+
+# again, using the . [tab] shows us the many operations possible...very cool, but
+# it can be overwhelming, so test different things out, look at the help, do think
+# you have to memorize this self, the real goal is that you can quickly look 
+# and figure out operations that may be helpfull.
+
+firstname = "Chase"
+print(firstname)
+
+lower_firstname = firstname.lower()
+print(lower_firstname)
+
+upper_firstname = firstname.upper()
+print(upper_firstname)
+
+# firstname.upper? Do this do see what it does. Again, the methods especially with
+# strings can be overwhelming, but very helpfull. 
+'''
+Exercise. This one also came up in our work. Suppose we have a variable 
+z = '12,345.6'. What is its type? Convert it to a floating point number 
+without the comma. Hint: Use tab completion to find a method to get rid 
+of the comma.
+'''
+
+# I love this excersise....
+
+z = "12,345.6" # first maybe try and convert it to float, see what happens...
+z = z.replace(",","") # is one way, what if you google this quesiton???
+
+'''
+Exercise. Run the code
+firstname = 'John'
+lastname  = 'Lennon'
+firstlast = firstname + ' ' + lastname
+Find a method to replace the n's in firstlast with asterisks.
+'''
+
+firstname = 'John'
+lastname  = 'Lennon'
+firstlast = firstname + ' ' + lastname
+
+firstlast = firstlast.replace("n","*")
+print(firstlast) # AWESOME !!!!
+
+
+                                                                    
 
 
 
