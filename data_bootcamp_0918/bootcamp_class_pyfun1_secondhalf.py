@@ -395,6 +395,10 @@ of the comma.
 z = "12,345.6" # first maybe try and convert it to float, see what happens...
 z = z.replace(",","") # is one way, what if you google this quesiton???
 
+# Anothere more complicated way might be to convert it to list, remove the correct
+# element...etc. the problem is this works in this case, but for a different 
+# number???
+
 '''
 Exercise. Run the code
 firstname = 'John'
