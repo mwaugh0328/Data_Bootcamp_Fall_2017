@@ -247,7 +247,7 @@ test_tuple = (1,2,3) # Similar to a list, but round brackets...
 
 #%% 
 # Builtin functions. We've been using one a lot print, here are some more....note
-# these are "buildin" meaning that they are ready to go when we boot up, this is
+# these are "built in" meaning that they are ready to go when we boot up, this is
 # unlike the log function which with out adding some package is not recognized.
 
 print(len('hello world')) # note how len is "counting how many characters" 

@@ -16,7 +16,7 @@ import requests
 ###############################################################################
 # First, specify the correct folder we will work from:
 
-folder = "C:\\data_bootcamp"
+folder = "C:\\data_bootcamp\\Data_Bootcamp_Fall_2017"
 #folder = folder + "\\NYU TEACHING\\Data Boot Camp Fall 2017\\Roster"
 
 # Note double backslash for windows, then the add sign on strings simply puts 
@@ -55,7 +55,7 @@ no_info = pd.DataFrame(['.'])
 # This creates an empy data frame to add to stuff, still need to understand, but it
 # did the trick
 
-
+#%%
 for index, row in data_bootcamp_roster.iterrows():
     
     git_repository = web_name_one + row['GitHub_name'] + web_name_two
@@ -113,7 +113,6 @@ print('Number of Students who have GitHub repository setup correctly',count, end
 print("Average Age",round(2017 - roster_github.birth_year.mean(),3), end = '\n \n')
 print("Average Years Since High School",round(2017 - roster_github.high_school_year.mean(),3), end = '\n \n')
 print("Average Years Till College Graduation",round(roster_github.college_year.mean()- 2017,3), end = '\n \n')
-
 
 
 
