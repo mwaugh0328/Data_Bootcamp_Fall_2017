@@ -218,9 +218,11 @@ price = 0
 for year in range(1, maturity + 1):
     
     price = price + coupon/((1+ytm)**year)
+    # https://en.wikipedia.org/wiki/Bond_valuation see the present value calculation...
 
-price = price + 100/((1+ytm)**maturity)
-print('The price of the bond is', price)
+price = price + 100/((1+ytm)**maturity) # Then this is the principal...
+
+print('The price of the bond is', price) # Should be 100...which it is...
 
     
 
