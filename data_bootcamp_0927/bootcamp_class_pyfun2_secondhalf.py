@@ -214,6 +214,7 @@ maturity = 10
 coupon = 5
 ytm = 0.05                 # yield to maturity
 
+# This is how you would price a bond using a got loop...
 price = 0
 for year in range(1, maturity + 1):
     
@@ -224,5 +225,46 @@ price = price + 100/((1+ytm)**maturity) # Then this is the principal...
 
 print('The price of the bond is', price) # Should be 100...which it is...
 
+maxnum = 500
+total = 0
+for nm in range(1,maxnum):
+    
+    total = total + nm
+    if total > 100:
+        break # This says break the loop
+        
+print("At number", nm," The total was", total)
+
+'''
+Exercise. Consider the list namelist = ['Chase', 'Dave', 'Sarah', 'Spencer']. 
+Write a loop that goes through the list until it reaches a name than begins with
+ the letter S. At that point it prints the names and exits the loop.
+'''
+
+namelist = ["Chase", "Dave", "Sarah", "Spencer"]
+
+for item in namelist:
+    if item[0] == "S":
+        print("First name with an S is ", item)
+        break
+    else:
+        print("Names that did not begin with S ", item)
+
+
+
+'''
+fruit = ['apple', 'banana', 'clementine']
+FRUIT = [item.upper() for item in fruit]
+'''
+'''
+def squareme(number):
+    """
+    Takes numerical input and returns its square
+    """
+    return number**2        # this is what the function sends back
+
+square = squareme(7)        # assign the "return" to variable on left
+print('The square is', square)
+'''
     
 
