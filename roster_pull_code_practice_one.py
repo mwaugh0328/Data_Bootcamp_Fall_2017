@@ -17,7 +17,7 @@ from numbers import Number
 ###############################################################################
 # First, specify the correct folder we will work from:
 
-folder = "G:\\data_bootcamp\\Data_Bootcamp_Fall_2017"
+folder = "C:\\data_bootcamp\\Data_Bootcamp_Fall_2017"
 #folder = folder + "\\NYU TEACHING\\Data Boot Camp Fall 2017\\Roster"
 
 # Note double backslash for windows, then the add sign on strings simply puts 

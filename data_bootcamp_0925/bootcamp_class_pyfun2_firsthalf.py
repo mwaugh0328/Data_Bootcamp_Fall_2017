@@ -172,6 +172,10 @@ Run it and see if you're right. What type of variable is check? What is its valu
 # Key issue, an if must always be followed by : and then the next line or lines
 # associated with the if statment must be indeted by 4 spaces. ONLY 4 spaces...
 # spyder will do this automatically....
+# there is also some kind of debate about spaces or tabs...here is some interesting
+# info if you need to choose:
+#
+# https://stackoverflow.blog/2017/06/15/developers-use-spaces-make-money-use-tabs/
 
 if 1 > 0: # this statment checks the value, then IF TRUE it advances to the next line
     print("1 is greater than 0") # here where it prints the value
