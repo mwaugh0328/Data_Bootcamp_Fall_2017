@@ -250,13 +250,31 @@ for item in namelist:
     else:
         print("Names that did not begin with S ", item)
 
+#%%
+###############################################################################
+# List comprehensions...just a compact way to operate loops on certain objects...
+namelist = ["Chase", "Dave", "Sarah", "Spencer"] # A list...       
+[print(item) for item in namelist]
+# This is going to do the following, first all must be in brackets...
+# the first stuff is the operation, 
+# here we are going to take the item and upper case it, then the next step tells 
+# us what we are going to do over the list...
+
+fruit = ['apple', 'banana', 'clementine'] # A list...
+FRUIT = [item.upper() for item in fruit] 
+# This is going to create a new list FRUIT by the first stuff is the operation, 
+# here we are going to take the item and upper case it, then populate the list
+
+# You can do multiple operations, here is an example
+
+FRUIT_length = [[item.upper(), len(item)] for item in fruit] 
+
+# Then you can do conditional stuff on this too...
+
+fruit6 = [item for item in fruit if len(item) >= 6]
 
 
-'''
-fruit = ['apple', 'banana', 'clementine']
-FRUIT = [item.upper() for item in fruit]
-'''
-'''
+
 def squareme(number):
     """
     Takes numerical input and returns its square
@@ -265,6 +283,6 @@ def squareme(number):
 
 square = squareme(7)        # assign the "return" to variable on left
 print('The square is', square)
-'''
+
     
 
