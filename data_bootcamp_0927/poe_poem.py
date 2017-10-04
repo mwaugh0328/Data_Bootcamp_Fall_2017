@@ -28,3 +28,21 @@ You will not read the riddle, though you do the best you can do."""
 
 # First step is that we can create a list where each of the lines is a string
 
+txt_lines = txt.splitlines()
+count = 0
+
+for line in txt_lines:
+   
+    for letter in line:
+        
+        if letter.isalpha() == 0:
+            
+            line = line.replace(letter,"*")
+            
+    line = line.replace("*",'')
+     
+    print(line[count],end ='')
+    count = count + 1
+    
+print('',end ='\n')
+print('all done')

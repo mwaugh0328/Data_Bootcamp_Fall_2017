@@ -39,6 +39,7 @@ n_students = len(data_bootcamp_roster)
 data_bootcamp_roster  = data_bootcamp_roster.dropna(subset = ['GitHub_name'])
 n_students_github = len(data_bootcamp_roster)
 
+#%%
 ###############################################################################
 # Now this is what I want to do (i) walk through the roster (ii) get their GitHub name
 # pull the GitHub file and then append it to roster...
