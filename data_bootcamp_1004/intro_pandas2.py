@@ -109,9 +109,11 @@ pwt = pwt.set_index(['year'])
 pwt.drop(2000) # set theindex to the year, then drop all the observations for 2000
 
 # Suppose I only wanted the year 2000 how would I do that...
-drp = [var for var in pwt.index if var != 2000 ] # create a list of index that is not 2000
+#drp = [var for var in pwt.index if var != 2000 ] # create a list of index that is not 2000
 
-pwt.drop(drp)
+#pwt.drop(drp)
+
+pwt[pwt.year == 2000] # Or do it this way....
 
 """
 Exercise. For the DataFrame df, create a variable diff equal to the difference
