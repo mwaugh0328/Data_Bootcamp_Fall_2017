@@ -96,9 +96,4 @@ for index, row in roster.iterrows():
 smtpObj.quit()
 
 #%%
-###############################################################################
-# This part then will log in to my email account. Note that gmail will typically
-# reject this upon the first attempt and probably send you an email saying that 
-# a unauthorized attempte was made, but if it was you then approve requests from
-# less secure apps such as this...
 
