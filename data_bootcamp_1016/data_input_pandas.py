@@ -141,6 +141,12 @@ columns contain.
 
 just_gdp_weo = weo[weo["WEO Subject Code"] == "NGDP"]
 
+years = range(1980,2021)
+
+str_years = [str(var) for var in years]
+
+just_gdp_weo[just_gdp_weo["ISO"]== "USA"][str_years].T.plot()
+
 #%%
 ###############################################################################
 
@@ -169,6 +175,16 @@ pisa.corr()
 print(pisa[pisa.index == "United States"] / pisa.mean())
 
 print(pisa[pisa.index == "Singapore"] / pisa.mean())
+
+countries = ["United States", "Singapore", "Argentina", "Sweden"]
+
+pisa["Math"][countries].plot(kind = 'barh')
+
+pisa.loc[countries]
+
+pisa.loc[countries]/pisa.loc[countries].mean()
+
+pisa.loc[countries].plot(kind = "barh")
 
 #%%
 
