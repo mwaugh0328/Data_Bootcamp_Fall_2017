@@ -60,7 +60,7 @@ wbgdp_pc.plot(kind = "barh")
 
 #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 ticker = ['AMZN', 'GOOG']
-q = data.get_quote_yahoo(ticker) # This is going to give a "real time" quote
+q = data.get_quote_yahoo("XXBTZUSD") # This is going to give a "real time" quote
 print(q)
 
 # This is how to get historical quotes...
@@ -74,8 +74,16 @@ hq = data.DataReader(ticker, 'yahoo', start, end)
 hq["Close"].plot()
 
 #Then lets plot this...
+#%%
+###############################################################################
+# Here is how to get bit coin data... Thanks Diego!
 
+start = datetime.datetime(2015,1,1)
+end = datetime.datetime(2017,10,17)
 
+bitcoin = data.DataReader("BITSTAMP/USD", 'quandl', start, end)
+
+bitcoin["Last"].plot()
 
 
 
